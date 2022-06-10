@@ -337,7 +337,7 @@ double AIPlayer::MiValoracion(const Parchis &estado, int jugador){
                 // Valoro positivamente que la ficha esté en casilla segura o meta.
                 if (estado.isSafePiece(c, j))
                 {
-                    puntuacion_jugador+=3;
+                    puntuacion_jugador+=5;
                 }
                 else if (estado.getBoard().getPiece(c, j).type == goal)
                 {
@@ -368,7 +368,7 @@ double AIPlayer::MiValoracion(const Parchis &estado, int jugador){
                 // Valoro positivamente que la ficha esté en casilla segura o meta.
                 if (estado.isSafePiece(c, j))
                 {
-                    puntuacion_oponente+=3;
+                    puntuacion_oponente+=5;
                 }
                 else if (estado.getBoard().getPiece(c, j).type == goal)
                 {
